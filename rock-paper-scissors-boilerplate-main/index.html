@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <h3>Rock Paper Scissors</h3>
+  <div class="score">
+    <div>
+      <span id="your-score">0</span><span> - </span><span id="comp-score">0</span>
+    </div>
+  </div>
+  <div class="both-containers">
+    <div class="container" id="your-container">
+      <h1>You</h1>
+      <img id="your-image" src="./assets/bg.png" alt="Your Choice" />
+      <div class="options" id="your-options">
+        <button id="rock" title="Rock">
+          <img src="./assets/rock-logo.png"  alt="Rock">
+        </button>
+        <button id="paper" title="Paper">
+          <img src="./assets/paper-logo.png" alt="Paper">
+        </button>
+        <button id="scissors" title="Scissors">
+          <img src="./assets/scissors-logo.png" alt="Scissors">
+        </button>
+      </div>
+    </div>
+    <div id="vs">
+      <img src="./assets/vs.png" alt="VS Image">
+    </div>
+    <div class="container" id="comp-container">
+      <h1>Computer</h1>
+      <img id="comp-image" src="./assets/bg.png" alt="Computer Choice">
+    </div>
+  </div>
+  <div class="result" id="result-modal">
+    <h1 id="result-message"></h1>
+    <button id="play-button">Play Again</button>
+  </div>
+  <script src="./game.js"></script>
+</body>
+</html>
